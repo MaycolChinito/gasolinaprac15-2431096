@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="gasolinaprac15.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="gasolineria.jpeg" WidthRequest="200" />
+            <Label Margin="10, 10, 10, 10" FontFamily="Bookman Old Style">Introduzca el precio de la gasolina en litros:</Label>
+            <Entry x:Name="PrecioPorLitros" Placeholder="Precio por litro" Margin="10, 10, 10, 10" FontFamily="Bookman Old Style"></Entry>
+            <Label Margin="10, 10, 10, 10" FontFamily="Bookman Old Style">Introduzca la cantidad de galones que se han surtido:</Label>
+            <Entry x:Name="GallonsEntry" Placeholder="Galones surtidos" Margin="10, 10, 10, 10" FontFamily="Bookman Old Style"></Entry>
+
+            <Label x:Name="ResultLabel" Margin="10, 10, 10, 10" FontFamily="Bookman Old Style">respuesta</Label>
+
+            <Button Text="Calcular lo que hay que cobrarle al cliente "
+                    Clicked="Button_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
